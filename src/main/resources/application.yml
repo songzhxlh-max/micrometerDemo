@@ -20,7 +20,7 @@ management:
     kairos.enabled: false
     logging.enabled: false
     newrelic.enabled: false
-    prometheus.enabled: true
+    prometheus.enabled: false
     signalfx.enabled: false
     stackdriver.enabled: false
     statsd.enabled: false
