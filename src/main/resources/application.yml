@@ -1,0 +1,39 @@
+server.port: 10088
+spring.application.name: springboot2-prometheus
+
+logging.level.org.springframework.integration.support.MessageBuilder: WARN
+logging.level.org.springframework.boot: INFO
+
+management:
+  metrics.export:
+    appoptics.enabled: false
+    atlas.enabled: false
+    azuremonitor.enabled: false
+    datadog.enabled: false
+    dynatrace.enabled: false
+    elastic.enabled: false
+    ganglia.enabled: false
+    graphite.enabled: false
+    humio.enabled: false
+    influx.enabled: false
+    jmx.enabled: true
+    kairos.enabled: false
+    logging.enabled: false
+    newrelic.enabled: false
+    prometheus.enabled: true
+    signalfx.enabled: false
+    stackdriver.enabled: false
+    statsd.enabled: false
+    wavefront.enabled: false
+
+  endpoint.shutdown.enabled: true
+
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+  endpoint:
+    health:
+      show-components: "always"
+      show-details: "always"
